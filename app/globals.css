@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  /* background: var(--background);
+  color: var(--foreground); */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #262626; 
+  color: #f6f7f8;
+  margin: 0;
+  padding: 0;
+}
+
+
+select {
+  background-color: hsl(0, 0%, 18%);
+  color: hsl(220, 14%, 97%);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.todo-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+.todo-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+.todo-container li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+
+.todo-container li .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.todo-container li .bottom {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  align-items: center;
+}
+
+.todo-container input[type="checkbox"] {
+  transform: scale(1.2);
+}
+
+.todo-container button {
+  border: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+  .todo-container li {
+    padding: 0.75rem;
+  }
+
+  .todo-container li .top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .todo-container li .bottom {
+    justify-content: space-between;
+  }
+}
