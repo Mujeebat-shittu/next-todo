@@ -7,6 +7,8 @@ import Pagination from './layout';
 import AddTodo from './add-todo';
 import { Edit, Trash, LoaderCircle } from "lucide-react";
 import "../globals.css"
+import Link from "next/link";
+
 
 type Todo = {
   userId: number;
