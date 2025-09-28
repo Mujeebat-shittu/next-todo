@@ -3,11 +3,9 @@
 
 import { useMutation, useQueryClient, useQuery } from '@tanstack/react-query';
 import { useState } from 'react';
-import Pagination from './layout';
+import Pagination from './pagination';
 import AddTodo from './add-todo';
 import { Edit, Trash, LoaderCircle } from "lucide-react";
-import "../globals.css"
-import Link from "next/link";
 
 
 type Todo = {

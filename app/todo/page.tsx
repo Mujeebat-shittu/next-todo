@@ -1,5 +1,5 @@
 // app/todo/page.tsx
-import { TodoList } from "../components/todo-list"; // client component
+import { TodoList } from "../../components/todo-list"; // client component
 
 export default async function Page() {
   // --- Fetch the raw todo list on the *server* --------------------------------

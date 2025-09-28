@@ -1,4 +1,6 @@
 import "./globals.css"
+import Link from "next/link";
+
 
 export default function Home() {
   return (
@@ -15,10 +17,10 @@ export default function Home() {
 
         <div className="flex flex-row gap-4">
           <button className="px-6 py-2 border-gray-300 border-2 rounded-2xl bg-white text-gray-600 hover:text-gray-900 hover:scale-[1.05]">
-            <a href="/todo">View Todos</a>
+          <Link href="/todo">View Todos</Link>
           </button>
           <button className="px-6 py-2 border-red-500 border-2 rounded-2xl hover:scale-[1.05] text-gray-300 hover:text-white">
-            <a href="/notfound">Test Not Found Page</a>
+            <Link href="/notfound">Test Not Found Page</Link>
           </button>
         </div>
       </div>
